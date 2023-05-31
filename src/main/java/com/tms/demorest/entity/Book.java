@@ -7,14 +7,14 @@ import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
+@RequiredArgsConstructor
 @Entity
 @Getter
 @Setter
 @Table(name = "books")
-@NoArgsConstructor
 @NamedQuery(name = "Book.findByParams",
             query = "select u from Book u where u.description = ?1")
 public class Book {
@@ -24,5 +24,4 @@ public class Book {
     private Long id;
     private String name;
     private String description;
-
 }

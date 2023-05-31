@@ -1,5 +1,6 @@
 package com.tms.demorest.controller;
 
+import com.tms.demorest.dto.BookDto;
 import com.tms.demorest.entity.Book;
 import com.tms.demorest.service.BookService;
 import java.util.List;
@@ -20,7 +21,7 @@ public class BookController {
     private final BookService bookService;
 
     @GetMapping("/all")
-    public List<Book> getBooks() {
+    public List<BookDto> getBooks() {
         return bookService.getBooks();
     }
 
@@ -36,13 +37,13 @@ public class BookController {
     }
 
     @PostMapping
-    public void save(@RequestBody Book book) {
-        bookService.saveOrUpdate(book);
+    public void save(@RequestBody BookDto bookDto) {
+        bookService.saveOrUpdate(bookDto);
     }
 
     @PutMapping("/{book_id}")
-    public void update(@PathVariable("book_id") Long id, @RequestBody Book book) {
-        bookService.update(id, book);
+    public void update(@PathVariable("book_id") Long id, @RequestBody BookDto bookDto) {
+        bookService.update(id, bookDto);
     }
 
     @PutMapping("/{book_id}/{book_name}")

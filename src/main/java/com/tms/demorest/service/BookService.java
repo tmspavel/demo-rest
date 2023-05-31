@@ -1,5 +1,6 @@
 package com.tms.demorest.service;
 
+import com.tms.demorest.dto.BookDto;
 import com.tms.demorest.entity.Book;
 import java.util.List;
 import java.util.Optional;
@@ -8,13 +9,13 @@ import java.util.Optional;
 //IoC
 public interface BookService {
 
-    List<Book> getBooks();
+    List<BookDto> getBooks();
 
     Optional<Book> getBookById(Long id);
 
-    void saveOrUpdate(Book book);
+    void saveOrUpdate(BookDto book);
 
-    void update(Long id, Book book);
+    void update(Long id, BookDto book);
 
     void updateBookName(Long id, String name);
 
