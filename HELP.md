@@ -1,18 +1,8 @@
-спринг секьюрити
-звоним в банк
-идентификация - фио, паспорт, телефон.
-процесс понимания скем мы имеем дело
-кем вы являетесь!
+пирамида тестирования
+https://habr.com/ru/articles/672484/
+https://www.google.com/search?q=%D0%BF%D0%B8%D1%80%D0%B0%D0%BC%D0%B8%D0%B4%D0%B0+%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F&tbm=isch&sa=X&ved=2ahUKEwjzzOOsiOH_AhWIjaQKHcA1CToQ0pQJegQIDBAB&biw=1422&bih=694&dpr=1.8#imgrc=_wJfP3ZIu3BsBM
+FiRST
+http://sergeyteplyakov.blogspot.com/2010/06/first-principles.html
 
-аутентификация - пароль(секьюрная инфа)
-банк кол центр(кодовое слово)
-система понимает что это вы!
-
-авторизация - что можем а что нет.
-система предоставляет функционал.
-какие права доступа у вас есть!
-
-Основные возможности.
-Шифрование паролей. - сохраняем в бд
-
-
+//параметризованые тесты
+https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests
